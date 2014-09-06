@@ -1,5 +1,7 @@
 # NewBeanfunStarter
 
+## *STILL IN DEVELOPING*
+
 ## About this
 
 Use NewBeanfun starting game is very slow. So I analyzed HTTP requests and transform it into an standalone application.
