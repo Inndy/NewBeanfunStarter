@@ -25,8 +25,7 @@ namespace NewBeanfunStarter
         {
             byte[] newData = new byte[8];
             for (int i = 0; i < 64; i++)
-                if ((inData[BitIP[i] >> 3] & (1 << (7 - (BitIP[i] & 0x07))))
-                    != 0)
+                if ((inData[BitIP[i] >> 3] & (1 << (7 - (BitIP[i] & 0x07)))) != 0)
                     newData[i >> 3] |= (byte)(1 << (7 - (i & 0x07)));
             Array.Copy(newData, inData, 8);
         }
@@ -36,8 +35,7 @@ namespace NewBeanfunStarter
             byte[] newData = new byte[8];
 
             for (int i = 0; i < 64; i++)
-                if ((inData[BitCP[i] >> 3] & (1 << (7 - (BitCP[i] & 0x07))))
-                    != 0)
+                if ((inData[BitCP[i] >> 3] & (1 << (7 - (BitCP[i] & 0x07)))) != 0)
                     newData[i >> 3] |= (byte)(1 << (7 - (i & 0x07)));
             Array.Copy(newData, inData, 8);
         }
@@ -45,8 +43,7 @@ namespace NewBeanfunStarter
         private void exp(byte[] inData, byte[] outData)
         {
             for (int i = 0; i < 48; i++)
-                if (((inData[BitEXP[i] >> 3]) & (1 << (7 - (BitEXP[i] & 0x07))))
-                    != 0)
+                if (((inData[BitEXP[i] >> 3]) & (1 << (7 - (BitEXP[i] & 0x07)))) != 0)
                     outData[i >> 3] |= (byte)(1 << (7 - (i & 0x07)));
         }
 
@@ -55,8 +52,7 @@ namespace NewBeanfunStarter
             byte[] newData = new byte[4];
 
             for (int i = 0; i < 32; i++)
-                if ((inData[BitPM[i] >> 3] & (1 << (7 - (BitPM[i] & 0x07))))
-                    != 0)
+                if ((inData[BitPM[i] >> 3] & (1 << (7 - (BitPM[i] & 0x07)))) != 0)
                     newData[i >> 3] |= (byte)(1 << (7 - (i & 0x07)));
 
             Array.Copy(newData, 0, inData, 0, 4);
@@ -72,8 +68,7 @@ namespace NewBeanfunStarter
         private void permutationChoose1(byte[] inData, byte[] outData)
         {
             for (int i = 0; i < 56; i++)
-                if ((inData[BitPMC1[i] >> 3] & (1 << (7 - (BitPMC1[i] & 0x07))))
-                    != 0)
+                if ((inData[BitPMC1[i] >> 3] & (1 << (7 - (BitPMC1[i] & 0x07)))) != 0)
                     outData[i >> 3] |= (byte)(1 << (7 - (i & 0x07)));
         }
 
@@ -85,8 +80,7 @@ namespace NewBeanfunStarter
             {
                 i3 = i >> 3;
                 BitPMC2_i = BitPMC2[i];
-                if ((inData[BitPMC2_i >> 3] & (1 << (7 - (BitPMC2_i & 0x07))))
-                    != 0)
+                if ((inData[BitPMC2_i >> 3] & (1 << (7 - (BitPMC2_i & 0x07)))) != 0)
                     outData[outIndex, i3] |= (byte)(1 << (7 - (i & 0x07)));
             }
         }
