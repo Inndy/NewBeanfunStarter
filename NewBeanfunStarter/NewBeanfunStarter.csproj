@@ -78,6 +78,7 @@
     <Compile Include="ImageMarquee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserAgentGenerator.cs" />
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
