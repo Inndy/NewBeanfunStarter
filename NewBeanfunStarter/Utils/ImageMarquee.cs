@@ -6,7 +6,7 @@ using System.Text;
 
 namespace NewBeanfunStarter
 {
-    class ImageMarquee
+    public class ImageMarquee
     {
         public uint index = 0;
         private Image[] imgs;

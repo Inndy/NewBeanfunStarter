@@ -7,7 +7,7 @@ using System.Text;
 
 namespace NewBeanfunStarter
 {
-    class DllInjector
+    public class DllInjector
     {
         [DllImport("kernel32.dll", SetLastError = true)]
         public static extern int CloseHandle(IntPtr hObject);
