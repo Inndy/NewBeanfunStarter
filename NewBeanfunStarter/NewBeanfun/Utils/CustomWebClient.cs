@@ -17,20 +17,20 @@ namespace NewBeanfun.Utils
             this.ResponseUri = null;
         }
 
-        public CustomWebClient(CookieContainer CookieContainer) : base()
+        public CustomWebClient(CookieContainer cookieContainer) : base()
         {
-            this.CookieContainer = CookieContainer;
+            this.CookieContainer = cookieContainer;
             this.ResponseUri = null;
         }
 
-        public string DownloadString(string Uri, Encoding Encoding)
+        public string DownloadString(string uri, Encoding encoding)
         {
-            return Encoding.GetString(this.DownloadData(Uri));
+            return encoding.GetString(this.DownloadData(uri));
         }
 
-        public string DownloadString(Uri Uri, Encoding Encoding)
+        public string DownloadString(Uri uri, Encoding encoding)
         {
-            return Encoding.GetString(this.DownloadData(Uri));
+            return encoding.GetString(this.DownloadData(uri));
         }
 
         protected override WebRequest GetWebRequest(Uri address)
