@@ -66,6 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncWorkResult.cs" />
+    <Compile Include="NewBeanfun\BeanfunClient.cs" />
+    <Compile Include="NewBeanfun\BeanfunGame.cs" />
+    <Compile Include="NewBeanfun\BeanfunGameAccount.cs" />
     <Compile Include="Utils\CustomWebClient.cs" />
     <Compile Include="Utils\DESDecryptor.cs" />
     <Compile Include="Utils\DllInjector.cs" />
