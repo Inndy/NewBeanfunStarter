@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 
-namespace NewBeanfunStarter
+namespace NewBeanfun.Utils
 {
     public class CustomWebClient : WebClient
     {
