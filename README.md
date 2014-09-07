@@ -1,24 +1,24 @@
 # NewBeanfunStarter
 
-## *STILL IN DEVELOPING*
+## *本專案目前正在開發中*
 
-## About this
+## 關於這個專案
 
-Use NewBeanfun starting game is very slow. So I analyzed HTTP requests and
-transform it into an standalone application.
+用 NewBeanfun 開遊戲真的很慢，所以我就分析了它背後的HTTP Request並且寫了一個
+獨立的啓動器
 
-Now you can enjoy your game without awfully slow NewBeanfun.
+現在你可以享受你的遊戲並且不用超級慢的 NewBeanfun
 
-## Compile
+## 如何編譯
 
-You need Visual Studio 2010 at least to compile this project.
+你需要至少 Visual Studio 2010 來編譯這個專案
 
-1. Put [Json.NET][1] into `Newtonsoft.Json`
-   (manually or `git submodule init --recursive`)
-2. Open `NewBeanfunStarter.sln` and compile
+1. 把 [Json.NET][1] 放在 `Newtonsoft.Json` 資料夾內
+   （手動下載或使用 `git submodule init --recursive`）
+2. 打開 `NewBeanfunStarter.sln` 並且編譯
 
-## License
+## 授權條款
 
-This program released under [MIT License](LICENSE).
+本專案採用 [MIT License](LICENSE) 授權釋出
 
   [1]: https://github.com/JamesNK/Newtonsoft.Json
