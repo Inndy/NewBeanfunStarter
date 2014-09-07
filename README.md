@@ -2,6 +2,10 @@
 
 ## *本專案目前正在開發中*
 
+## README in other language
+- [中文](README.md)
+- [English](README_en.md)
+
 ## 關於這個專案
 
 用 NewBeanfun 開遊戲真的很慢，所以我就分析了它背後的HTTP Request並且寫了一個

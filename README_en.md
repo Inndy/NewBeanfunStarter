@@ -2,6 +2,10 @@
 
 ## *STILL IN DEVELOPING*
 
+## README in other language
+- [中文](README.md)
+- [English](README_en.md)
+
 ## About this
 
 Use NewBeanfun starting game is very slow. So I analyzed HTTP requests and
