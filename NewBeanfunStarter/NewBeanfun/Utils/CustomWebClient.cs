@@ -23,6 +23,16 @@ namespace NewBeanfun.Utils
             this.ResponseUri = null;
         }
 
+        public string DownloadUtf8String(string uri)
+        {
+            return Encoding.UTF8.GetString(this.DownloadData(uri));
+        }
+
+        public string DownloadUtf8String(Uri uri)
+        {
+            return Encoding.UTF8.GetString(this.DownloadData(uri));
+        }
+
         public string DownloadString(string uri, Encoding encoding)
         {
             return encoding.GetString(this.DownloadData(uri));
