@@ -67,8 +67,10 @@
   <ItemGroup>
     <Compile Include="AsyncWorkResult.cs" />
     <Compile Include="NewBeanfun\BeanfunClient.cs" />
+    <Compile Include="NewBeanfun\BeanfunExceptions.cs" />
     <Compile Include="NewBeanfun\BeanfunGame.cs" />
     <Compile Include="NewBeanfun\BeanfunGameAccount.cs" />
+    <Compile Include="NewBeanfun\Utils\UnixTimeStamp.cs" />
     <Compile Include="NewBeanfun\Utils\CustomWebClient.cs" />
     <Compile Include="NewBeanfun\Utils\DESDecryptor.cs" />
     <Compile Include="NewBeanfun\Utils\FastRegex.cs" />
