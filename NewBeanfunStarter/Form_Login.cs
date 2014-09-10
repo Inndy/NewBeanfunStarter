@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using NewBeanfun;
 
 namespace NewBeanfunStarter
 {
@@ -15,9 +16,11 @@ namespace NewBeanfunStarter
         ImageMarquee im;
         Timer tmrMarquee = new Timer() { Interval = 100 };
         BackgroundWorker bgwkr = new BackgroundWorker();
-        public Form_Login()
+        BeanfunClient beanfunClinet;
+        public Form_Login(BeanfunClient BeanfunClient)
         {
             InitializeComponent();
+            this.beanfunClinet = BeanfunClient;
             im = new ImageMarquee(Properties.Resources.gama0,
                                   Properties.Resources.gama1,
                                   pbCaptcha.BackColor,
