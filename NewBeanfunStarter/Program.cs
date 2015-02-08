@@ -15,7 +15,7 @@ namespace NewBeanfunStarter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Login());
+            Application.Run(new Form_Login(new NewBeanfun.BeanfunClient(new List<NewBeanfun.BeanfunGame>())));
         }
     }
 }

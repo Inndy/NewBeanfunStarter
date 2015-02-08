@@ -31,6 +31,9 @@ namespace NewBeanfunStarter
 
         private void Form_Login_Load(object sender, EventArgs e)
         {
+            this.beanfunClinet.Initialize();
+            this.tmrMarquee.Stop();
+            pbCaptcha.BackgroundImage = this.beanfunClinet.GetCaptchaImage();
         }
 
         void tmrMarquee_Tick(object sender, EventArgs e)
