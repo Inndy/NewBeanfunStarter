@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncWorkResult.cs" />
+<<<<<<< Updated upstream
     <Compile Include="NewBeanfun\BeanfunClient.cs" />
     <Compile Include="NewBeanfun\BeanfunExceptions.cs" />
     <Compile Include="NewBeanfun\BeanfunGame.cs" />
@@ -75,6 +76,16 @@
     <Compile Include="NewBeanfun\Utils\DESDecryptor.cs" />
     <Compile Include="NewBeanfun\Utils\FastRegex.cs" />
     <Compile Include="Utils\DllInjector.cs" />
+=======
+    <Compile Include="BeanfuncExceptions.cs" />
+    <Compile Include="BeanfunClient.cs" />
+    <Compile Include="BeanfunGameAccount.cs" />
+    <Compile Include="CustomWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DESDecryptor.cs" />
+    <Compile Include="DllInjector.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
